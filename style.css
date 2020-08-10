@@ -1,0 +1,347 @@
+/*********************************************************************************
+* WEB222 – Assignment 05
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of
+* this assignment has been copied manually or electronically from any other source (including web sites)
+* or distributed to other students.
+*
+* Name: Nisrein Hinnawi   Student ID: 130223183    Date: 7/8/2020
+*
+********************************************************************************/
+
+/* Add any CSS you need to this file. */
+html {
+  background: linear-gradient(to right, #4e4c61, #cdedfa);
+}
+
+#design2 {
+  background: linear-gradient(#0f739b, #883c6c);
+}
+
+body {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #000000;
+  margin-top: 5%;
+}
+
+#banner {
+  object-fit: scale-down;
+}
+
+#banner-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.menu1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: cursive;
+  font-style: italic;
+  font-size: 30pt;
+  background: -webkit-linear-gradient(rgb(250, 5, 119), rgb(17, 36, 12));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul {
+  height: 100%;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0 0 0 -12px;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  padding: 12px 12px 13px 12px;
+  display: inline-block;
+  line-height: 40px;
+  font: 95% Tahoma, sans-serif, Arial;
+  text-decoration: none;
+  color: white;
+}
+
+#ca1 {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.item {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  align-items: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  width: 100%;
+  align-items: center;
+  margin: 0 -5px;
+  padding-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.main_cats_parent_container {
+  text-align: center;
+  margin-bottom: 200px;
+  padding-left: 200px;
+}
+
+.main_cats_content {
+  align-items: center;
+  display: inline-block;
+}
+
+.cat_image {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  border-radius: 4px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.item_image {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  border-radius: 4px;
+}
+
+table {
+  width: 99%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px;
+}
+
+td {
+  text-align: left;
+  border-style: none;
+  border-width: 1px;
+  border-bottom: ridge;
+}
+
+th {
+  text-align: left;
+}
+
+.th_price {
+  text-align: right;
+  color: green;
+}
+
+.th_price_free {
+  text-align: right;
+  color: red;
+}
+
+tr:hover {
+  background-color: #65aad8;
+}
+
+tr {
+  border-style: none;
+  border-width: 1px;
+  border-bottom: ridge;
+}
+
+footer {
+  height: 70px;
+  width: 100%;
+  background: #343434;
+  background-color: #556068;
+  border: #000 solid 1px;
+  color: #eee;
+  font-size: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  outline: 1px dashed #98abb9;
+  outline-offset: -5px;
+}
+
+.footer_right {
+  padding-right: 15px;
+  text-align: right;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+#pfoot {
+  font-family: 'Shrikhand';
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#f1 {
+  width: 40%;
+  height: 150px;
+  border: #000 solid 2px;
+  font-size: 15px;
+  font-style: normal;
+  font-family: sans-serif;
+  font-weight: bold;
+  -moz-box-shadow: inset -30px -30px 100px #eee;
+  -webkit-box-shadow: inset -30px -30px 100px #eee;
+  box-shadow: inset -30px -30px 100px #eee;
+  border-radius: 10px;
+}
+
+#f2 {
+  width: 40%;
+  height: 150px;
+  border: #000 solid 2px;
+  font-size: 15px;
+  font-style: normal;
+  font-family: sans-serif;
+  font-weight: bold;
+  -moz-box-shadow: inset -30px -30px 100px #eee;
+  -webkit-box-shadow: inset -30px -30px 100px #eee;
+  box-shadow: inset -30px -30px 100px #eee;
+  border-radius: 10px;
+}
+
+/* Button */
+#send {
+  min-width: 200px;
+  -moz-box-shadow: inset -3px -3px 10px #947131;
+  -webkit-box-shadow: inset -3px -3px 10px #c9983e;
+  box-shadow: inset -3px -3px 10px #d1cbbf;
+  background-color: #fcf6e8;
+  color: rgb(43, 27, 27);
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-left: 10px;
+}
+
+.main_items_content {
+  margin-bottom: 200px;
+  padding-left: 40px;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 8em;
+  text-align: right;
+}
+
+input:focus,
+textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: rgb(44, 236, 26);
+}
+
+fieldset ul {
+  margin-left: -40px;
+}
+
+.contact_message {
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+aside {
+  width: 30%;
+  padding-left: 30px;
+  margin-left: 15px;
+  margin-right: 200px;
+  margin-top: 130px;
+  float: right;
+  font-weight: bold;
+  font-family: cursive;
+  background-color: unset;
+  border-radius: 10px;
+  border-style: hidden;
+}
+/* Title */
+#header_body {
+  background: transparent;
+  color: #fff;
+}
+
+#header_h2 {
+  font-size: 30px;
+  line-height: 95px;
+  font-family: 'Shrikhand', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+#header_container {
+  /*stitching*/
+  outline: 1px dashed #98abb9;
+  outline-offset: -5px;
+
+  background-color: #556068;
+  height: 100px;
+  width: 70%;
+  margin: 20px auto;
+
+  /*shadow*/
+  -webkit-box-shadow: 2px 2px 2px #000;
+  -moz-box-shadow: 2px 2px 2px #000;
+  box-shadow: 2px 2px 2px #000;
+}
+
+#logo_image {
+  width: 8%;
+  height: 8%;
+  text-align: center;
+}

@@ -1,0 +1,143 @@
+<!-- 
+  /*********************************************************************************
+* WEB222 – Assignment 05
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of
+* this assignment has been copied manually or electronically from any other source (including web sites)
+* or distributed to other students.
+*
+* Name: Nisrein Hinnawi   Student ID: 130223183    Date: 7/8/2020
+*
+********************************************************************************/
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="32x32" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+    <script src="cities.js"></script>
+    <script src="contactus.js"></script>
+  </head>
+
+  <body>
+    <aside>
+      <p>
+        We listen, We think,<br />
+        We create, We manage...&#128516;
+      </p>
+    </aside>
+
+    <div>
+      <form
+        id="contact_form"
+        action="https://httpbin.org/post"
+        method="POST"
+        onsubmit="return validate()"
+      >
+        <fieldset id="f1">
+          <legend>Contact Us:</legend>
+          <label>Name:&nbsp;</label>
+          <input type="text" id="name" name="name" placeholder="your name" /> <br />
+          <label>Email:&nbsp;</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            oninvalid="setCustomValidity('Email must be in a valid format i.e. person@sample.com')"
+            placeholder="email address"
+          />
+          <br />
+          <label>City:&nbsp;</label>
+          <input type="text" list="cities" name="city" id="city" placeholder="your city" /> <br />
+          <datalist id="cities" class="list_of_cities"> </datalist>
+          <label>Postal Code:&nbsp;</label>
+          <input type="text" name="postalcode" id="postal_code" placeholder="postal code" />
+          <!--oninvalid="setCustomValidity('Please enter valid postal code i.e. L1P 1C2 ')"
+          pattern="^[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[- ]{0,1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}"-->
+        </fieldset>
+        <br />
+
+        <fieldset id="f2">
+          <legend>About</legend>
+          <ul style="list-style-type:none">
+            <li>
+              <input
+                checked="checked"
+                name="group"
+                type="radio"
+                placeholder="Question"
+                id="contact_question"
+              />
+              Question
+            </li>
+            <li>
+              <input name="group" type="radio" placeholder="Comment" id="contact_comment" /> Comment
+            </li>
+            <li>
+              <input
+                name="group"
+                type="radio"
+                placeholder="Order Problem"
+                id="contact_order_issue"
+              />
+              Order Problem
+            </li>
+          </ul>
+          <div id="order_numner_container">
+            Order Number:
+            <input
+              type="text"
+              id="order_number"
+              name="ordernumber"
+              placeholder="your order number"
+            />
+          </div>
+          <br />
+        </fieldset>
+
+        <br />
+        <textarea
+          cols="50"
+          rows="8"
+          id="message"
+          name="message"
+          placeholder="Write your message here..."
+          class="contact_message"
+        ></textarea>
+
+        <input type="hidden" name="hidden" id="entry" value="Nisrein Hinnawi" />
+      </form>
+    </div>
+
+    <br />
+    <button type="submit" form="contact_form" value="Submit" id="send">Send</button>
+    <br />
+    <br />
+
+    <nav>
+      <div class="menu1">
+        <ul>
+          <li><a href="index.html">247 Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <footer>
+      <div id="pfoot">
+        247 Garage Sale <br />
+        is new way for garage sale
+      </div>
+      <div class="footer_right">
+        <form action="https://formspree.io/xrgyjrkp" method="POST">
+          follow us <input type="email" name="_replyto" />
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
